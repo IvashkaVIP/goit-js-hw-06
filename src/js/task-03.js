@@ -16,7 +16,7 @@ const images = [
 const makeImageItem = ({ url, alt }) => {
   return `
     <li>
-      <img class="image" src="${url}" alt="${alt}">
+      <img src="${url}" alt="${alt}">
     </li>
   `;
 };
