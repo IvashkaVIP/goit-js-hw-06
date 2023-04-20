@@ -12,7 +12,7 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
-    // функция создания разметки для одного элемента li из одного элемента массива
+
 const makeImageItem = ({ url, alt }) => {
   return `
     <li>
@@ -20,12 +20,7 @@ const makeImageItem = ({ url, alt }) => {
     </li>
   `;
 };
-    // функция создания разметки для всех элементов массива + делаем одной строкой    
 const makeImagesList = images.map(makeImageItem).join('');
-    // выбираем селектор для вставки
 const imagesListContainer = document.querySelector('.gallery');
-    // вставляем внутрь селектора в конец
 imagesListContainer.insertAdjacentHTML('beforeend', makeImagesList);
 
-// console.log(makeImageItem(images[0]))
-// console.log(makeImagesList);
