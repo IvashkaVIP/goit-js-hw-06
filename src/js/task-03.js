@@ -20,7 +20,6 @@ const makeImageItem = ({ url, alt }) => {
     </li>
   `;
 };
-const makeImagesList = images.map(makeImageItem).join('');
-const imagesListContainer = document.querySelector('.gallery');
-imagesListContainer.insertAdjacentHTML('beforeend', makeImagesList);
-
+const makeImagesList = images.map(makeImageItem).join("");
+const imagesListContainer = document.querySelector(".gallery");
+imagesListContainer.insertAdjacentHTML("beforeend", makeImagesList);
